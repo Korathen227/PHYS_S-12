@@ -334,6 +334,8 @@ article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-d
 
 .work-details header h2{ color:#343434; font-size:36px; font-weight:800}
 
+.work-details header h2 span{ display:inline-block; color:#fb5353; font-size:18px;font-weight:800;padding-top:3px}
+
 .work-details header a{ display:inline-block; color:#fb5353; font-size:18px;font-weight:800;padding-top:3px}
 
 .work-details header a i{ color:#0d0d0d; padding-left:10px}
