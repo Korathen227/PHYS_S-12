@@ -122,9 +122,9 @@
 
                             	<header role="work-title">
 
-                                	<h2>Final Project Proposals</h2>
+                                	<h2>The Bluetooth-Controlled Arm (BCA) 1.0</h2>
 
-                                    <h2><span>3 minute read</span></h2>
+                                    <h2><span>16 minute read</span></h2>
 
                                     <!-- <a href="#">Visit online <i class="fa fa-external-link" aria-hidden="true"></i></a> -->
 
@@ -136,17 +136,9 @@
 
                             	<section>
 
-                                	<p><strong>Ideas</strong><br/>
-
-                                    <p>One idea I had is a piano book page turner, which would turn pages of my piano books while I play. Basically my left foot would press a small sensor at the bottom of the piano and then there would be a device at the top of the piano whih would turn the page. </p>
-
-                                    <p>One other idea I had was a drawing robot. Since I recently learned how to code NNs, I thought it would be cool to make art that is entirely computer generated -- basically the NN creates the artwork and then the drawing bot takes that image and draws it! </p>
-
-                                    <p>Another idea is to make a robotic hand that you will be able to control via a glove. Basically, this would entail having an actual hand hook up to a glove that would track the position of fingers and send that to the robotic hand so that it could mimic the same position. I'm pretty sure this is way too ambitious but I think it would be very cool. Here are a few images that sort of describe what I'm thinking about:</p>
+                                	<p>For my final project, I built a robotic arm that can be controlled via a glove. Such a robotic arm can be modified to handle tools and such during surgery, as well as countless other endeavors. This robot would also be great for other applications like annoying my little brother remotely, and can be a stepping stone to more advanced gesture-controlled robots. I originally wanted to use soft robotics as a part of the robot it was not possible due to the fact that any one actuator takes ~16 hours to make, giving no room for trial and error given my short time frame. However, I want to pursue that afterwards.</p>
 
                                 </section>
-
-                            
 
                             </div>
 
@@ -154,54 +146,97 @@
 
                         <div class="clearfix"></div>
 
-                        
+                        <div class="row"><p></br></p></div>
 
-                        <div class="work-images grid">
+                        <div class="clearfix"></div>
 
-                            <ul class="grid-lod effect-2" id="grid">
+                        <div class="video-container">
 
-                                
+                            <iframe
 
-                                        <img src="images/work/works-image-1.jpg" alt="" class="img-responsive"/>
+                            src="https://www.youtube.com/embed/GPSEP8xgVMI">
 
-                                         <figcaption>
-
-                                            <h2><span></span></h2>
-                                            <p style="color: white">A quick sketch I made of this idea.</p>
-                                            <h2><span/></h2>
-                                            <!-- <p style="color: white">.stl file • click to download</p> -->
-
-                                        </figcaption>
-
-                                    
-                            </ul>
-
-                            <ul>
-
-                                <li><img src="images/work/works-image-2.jpg" alt="" class="img-responsive"/></li>
-
-                                <li><img src="images/work/works-image-3.jpg" alt="" class="img-responsive"/></li>
-
-                            </ul>
+                            </iframe>
 
                         </div>
 
-                    <div class="work-images grid">
+                        <div class="clearfix"></div>
 
-                        <section>
+                        <div class="row"><p></br></p></div>
 
-                            <p><strong>ROBOTIC ARM!!!</strong><br/>
+                        <div class="clearfix"></div>
 
-                            <p>I eventually decided to build a robotic hand! Except, not really. It was a robotic arm. Although a hand would have been very cool and much more useful for surgery and other applications, it would be very difficult to make with the materials I have available. However, a robotic arm is much easier to make at a reasonable scale and it would be able to handle tools and such during surgery. Although I originally wanted to use soft robotics as a part of the robot it was not possible due to the fact that any one actuator takes ~16 hours to make, giving no room for trial and error given my short time frame. However, I want to pursue that afterwards. Anyways, this robot would also be great for other applications like annoying my brother remotely and also picking up very hot items.</p>
-                            <p><strong>Parts:</strong><br/>
-                            <p>
-                            I am so grateful that my professors were able to send me laser cuts of a robotic CAD model I found from <a href='https://www.thingiverse.com/thing:2433' download>Thingiverse</a>. I borrowed most of my materials (flex sensors, bluetooth modules, etc.) either from Amazon overnight shipping (it's free shipping! How is this free??) or from my friends who have lot of different gizmos and sensors. Notably, the things that weren't in the kit that I used were 5 regular-sized servos, 2 accelerometers, 3 adafruit flex sensors, 1 PCA9685 servo driver, and 2 HC-05 bluetooth modules which broke :(</p>
+                        <div class="row">
 
-                        </section> 
+                            <div class="col-xs-12 col-sm-12 col-md-4">
 
-                    </div>
+                                <h3>Parts</h3>
 
-                    </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-8">
+
+                                <section>
+
+                                    <p><strong>Parts not in the kit</strong>: My professors were able to send me laser cuts of a robotic CAD model I found from <a href='https://www.thingiverse.com/thing:2433'>Thingiverse</a> (thank you again!). I borrowed most of my materials (flex sensors, bluetooth modules, etc.) either from Amazon overnight shipping (it's free shipping! How is this free??) or from my friends who have lot of different gizmos and sensors. Notably, the things that weren't in the kit that I used were 5 regular-sized servos, 2 accelerometers, 3 Adafruit flex sensors, 1 PCA9685 servo driver, and 2 HC-05 bluetooth modules. <br>
+                                    <strong>Parts in the kit</strong>: 2 mini-servos, 1 Metro M0 microcontroller, 1 ESP32 Huzzah Board (Adafruit Feather), a 9V battery to power the glove, and a battery pack to power the servo driver.</p>
+
+                                </section>
+
+                            </div>
+
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="row">
+
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+
+                                <h3>How it Works</h3>
+
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-8">
+
+                                <section>
+
+                                    <p>
+                                        <strong>The arm</strong>: Each servo corresponds to one degree of movement of the robotic arm (except for the "shoulder" ones, where there are two servos corresponding to one degree of movement). These servos are controlled by a servo motor board which simplifies the wiring which would otherwise get very messy.<br>
+                                        <strong>The glove</strong>: The glove uses 2 accelerometers to calculate rotation of the wrist and bending of the elbow, and then uses 3 flex sensor to determine the bending. These are then sent to the hand via the bluetooth in the form of characters, as shown in the demo video. This is done at a rate of 4800 baud.<br>
+                                        <strong>The code</strong>: The code (adapted from online) is pretty much as explained in the demo video -- the glove sends signals via bluetooth in the form of characters. When these are received by the arm, the code reads that and executes the movement based on what character it receives (e.g. F/f controls the extension/retraction of the gripper arm). Like most things, it's quite simple conceptually but a bit harder to implement in reality. My code is linked below, although I would suggest you code your arm from scratch because I basically had to do that considering all of the different calibration changes I had to implement. <br>
+                                        <a href='./arduino/robotic-arm.zip' download>Robotic Arm Code</a> (Again, if you are building your own, I'd just recommend coding it from scratch than referencing mine, because your model will guaranteed be different than mine.)
+                                    </p>
+
+                                </section>
+
+                            </div>
+
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="row">
+
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+
+                                <h3>Construction</h3>
+
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-8">
+
+                                <section>
+
+                                    <p>This project took a lot longer to make than I expected, mostly because I kept running into unexpected problems left and right. One problem I encountered was my HC-05 bluetooth modules being plugged into the wrong hole by accident and ruining the entire thing. Although, I cannot tell what was the actual issue behind the bluetooth module error because even with the "incorrect" wiring the circuit should have been fine. Regardless, that took lots of time to solve. Another issue I encountered was that I was missing materials, mainly bearings and of course, new bluetooth modules since one I had was broken. I also tried making a gripper out of Ecoflex (documentation on my molding and casting page) but it was too heavy to be supported by the arm. Coding-wise, the biggest issue was calibration, since any wrong calculation could potentially destroy my arm by causing the servos to overextend into themselves. One time it almost did, my arm was lucky that I almost instantly unplugged it because it would have been a disaster. On top of that, due to personal issues (I was moving) I only had four days (plus a three day extension) to fully complete my project. However, I finally managed to succeed. See the image gallery below for a more in-depth process.</p>
+
+                                </section>
+
+                            </div>
+
+                        </div>
+
+                        <div class="clearfix"></div>
 
                     <div class="clearfix"></div>  
 
@@ -209,14 +244,32 @@
 
                         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
 
-                            
+                            <figure class="effect-oscar">
 
-                            <img src="images/final-images/image-01.jpg" alt="" class="img-responsive"/>
+                            <img src="images/final-images/image-01.jpg" alt="arm base" class="img-responsive"/>
 
                                  <figcaption>
 
                                     <h2><span></span></h2>
-                                    <p style="color: white"></p>
+                                    <p style="color: white">I started building the base. I just cut hot glue gun sticks in half to create the bearings, which I glued on with (ironically) more hot glue. This is controlled by one servo. You can also see some more of the lasercut parts in the background. </p>
+                                    <h2><span/></h2>
+
+                                </figcaption>
+
+                            </figure>
+
+                        </section>
+
+                        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
+
+                            <figure class="effect-oscar">
+
+                            <img src="images/final-images/image-03.jpg" alt="arm shoulder" class="img-responsive"/>
+
+                                 <figcaption>
+
+                                    <h2><span></span></h2>
+                                    <p style="color: white">Here I started building the shoulder. I later added spacers (which was just cardboard), but here you can see the way they attach onto the servos. This part was the most difficult to calibrate since there were two servos controlling the same part.</p>
                                     <h2><span/></h2>
 
                                 </figcaption>
@@ -227,491 +280,320 @@
 
                         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
 
-                            
+                            <figure class="effect-oscar">
 
-                            <img src="images/final-images/image-02.jpg" alt="" class="img-responsive"/>
+                            <img src="images/final-images/image-06.jpg" alt="arm elbow" class="img-responsive"/>
 
                                  <figcaption>
 
                                     <h2><span></span></h2>
-                                    <p style="color: white"></p>
+                                    <p style="color: white">Here I start building the elbow. I used cardboard and long M3 bolts as bootleg spacers, which worked surprisingly. Originally, I used one of the bearings from the kit as a bearing for the opposite side of the servo, but I eventually replaced it with a 3d printed bearing from the Thingiverse file. Please also ignore the mess behind the photo.</p>
                                     <h2><span/></h2>
 
                                 </figcaption>
 
-                            
+                            </figure>
 
                         </section>
 
                         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
 
-                            
+                            <figure class="effect-oscar">
 
-                            <img src="images/final-images/image-03.jpg" alt="" class="img-responsive"/>
+                            <img src="images/final-images/image-08.jpg" alt="gripper wip" class="img-responsive"/>
 
                                  <figcaption>
 
                                     <h2><span></span></h2>
-                                    <p style="color: white"></p>
+                                    <p style="color: white">Here I start assembling the gripper. I modified this away from the original model to make the gripper wider in hopes it could pick up larger objects. This didn't fully work, but because of the servo model I used I couldn't do much about it anyways, since the servo cap was too tall to follow what was in the original CAD.</p>
                                     <h2><span/></h2>
 
                                 </figcaption>
 
-                            
+                            </figure>
 
                         </section>
 
                         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
 
-                            
+                            <figure class="effect-oscar">
 
-                            <img src="images/final-images/image-04.jpg" alt="" class="img-responsive"/>
+                            <img src="images/final-images/image-09.jpg" alt="gripper" class="img-responsive"/>
 
                                  <figcaption>
 
                                     <h2><span></span></h2>
-                                    <p style="color: white"></p>
+                                    <p style="color: white">Completed gripper holding a DC motor. Unfortunately, the gripper only worked when it was assisted by gravity, and couldn't hold anything perpendicular to the ground unless there was a handle/string of some sort.</p>
                                     <h2><span/></h2>
 
                                 </figcaption>
 
-                            
+                            </figure>
 
                         </section>
 
                         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
 
-                            
+                            <figure class="effect-oscar">                            
 
-                            <img src="images/final-images/image-05.jpg" alt="" class="img-responsive"/>
+                            <img src="images/final-images/image-13.jpg" alt="arm mechanics complete" class="img-responsive"/>
 
                                  <figcaption>
 
                                     <h2><span></span></h2>
-                                    <p style="color: white"></p>
+                                    <p style="color: white">And, with that, the arm was done! I added in the "wrist", which I forgot to take a photo of. Basically, one regular servo motor controls the pivot of the wrist (up and down), and attached to that is a mini-servo controlling the rotation of the forearm.</p>
                                     <h2><span/></h2>
 
                                 </figcaption>
 
-                            
+                            </figure>
 
                         </section>
 
                         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
 
-                            
+                            <figure class="effect-oscar">
 
-                            <img src="images/final-images/image-06.jpg" alt="" class="img-responsive"/>
+                            <img src="images/final-images/image-15.jpg" alt="arm servo controller" class="img-responsive"/>
 
                                  <figcaption>
 
                                     <h2><span></span></h2>
-                                    <p style="color: white"></p>
+                                    <p style="color: white">I plugged in all of the servo wires to the servo controller via jumper wires.</p>
                                     <h2><span/></h2>
 
                                 </figcaption>
 
-                            
+                            </figure>
 
                         </section>
 
                         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
 
-                            
+                            <figure class="effect-oscar">
 
-                            <img src="images/final-images/image-07.jpg" alt="" class="img-responsive"/>
+                            <img src="images/final-images/image-16.jpg" alt="glove parts" class="img-responsive"/>
 
                                  <figcaption>
 
                                     <h2><span></span></h2>
-                                    <p style="color: white"></p>
+                                    <p style="color: white">Here you can see me beginning to assemble the glove. You can see preliminary electronics and all of the parts used (flex sensors, HC-05, accelerometer, etc.</p>
                                     <h2><span/></h2>
 
                                 </figcaption>
 
-                            
+                            </figure>
 
                         </section>
 
                         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
 
-                            
+                            <figure class="effect-oscar">
 
-                            <img src="images/final-images/image-08.jpg" alt="" class="img-responsive"/>
+                            <img src="images/final-images/image-18.jpg" alt="wiring close up" class="img-responsive"/>
 
                                  <figcaption>
 
                                     <h2><span></span></h2>
-                                    <p style="color: white"></p>
+                                    <p style="color: white">Here's a close-up of the wiring I used. Later on this became undone and I accidentally plugged the HC-05 into another slot, which led to a problem that took me hours to solve. So, don't do that. This wiring is all sensors, so everything is plugged into analog pins.</p>
                                     <h2><span/></h2>
 
                                 </figcaption>
 
-                            
+                            </figure>
 
                         </section>
 
                         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
 
-                            
+                            <figure class="effect-oscar">
 
-                            <img src="images/final-images/image-09.jpg" alt="" class="img-responsive"/>
+                            <img src="images/final-images/image-19.jpg" alt="glove first iteration" class="img-responsive"/>
 
                                  <figcaption>
 
                                     <h2><span></span></h2>
-                                    <p style="color: white"></p>
+                                    <p style="color: white">Here's the first iteration of the glove. However, at this point the power and ground are being powered by the wire in the kit converting 9V power to wires for a breadboard.</p>
                                     <h2><span/></h2>
 
                                 </figcaption>
 
+                            </figure>
+
+                        </section>
                             
+                        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
+
+                            <figure class="effect-oscar">
+
+                            <img src="images/final-images/image-22.jpg" alt="glove complete" class="img-responsive"/>
+
+                                 <figcaption>
+
+                                    <h2><span></span></h2>
+                                    <p style="color: white">I replace that wire and use that for the servo driver, and instead hot glued a 9V battery to the glove and connected it with clip wires.</p>
+                                    <h2><span/></h2>
+
+                                </figcaption>
+
+                            </figure>
 
                         </section>
 
                         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
 
-                            
+                            <figure class="effect-oscar">
 
-                            <img src="images/final-images/image-10.jpg" alt="" class="img-responsive"/>
+                            <img src="images/final-images/image-20.jpg" alt="bluetooth added to arm" class="img-responsive"/>
 
                                  <figcaption>
 
                                     <h2><span></span></h2>
-                                    <p style="color: white"></p>
+                                    <p style="color: white">I added the hc-05 to the arm, and now the electronics are set.</p>
                                     <h2><span/></h2>
 
                                 </figcaption>
 
-                            
+                            </figure>
 
                         </section>
 
                         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
 
-                            
+                            <figure class="effect-oscar">
 
-                            <img src="images/final-images/image-13.jpg" alt="" class="img-responsive"/>
+                            <img src="images/final-images/image-23.jpg" alt="robo arm online!" class="img-responsive"/>
 
                                  <figcaption>
 
                                     <h2><span></span></h2>
-                                    <p style="color: white"></p>
+                                    <p style="color: white">robotic arm online, receiving it's first line of code! very exciting moment, so i put it here.</p>
                                     <h2><span/></h2>
 
                                 </figcaption>
 
-                            
+                            </figure>
 
                         </section>
 
                         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
 
-                            
+                            <figure class="effect-oscar">
 
-                            <img src="images/final-images/image-14.jpg" alt="" class="img-responsive"/>
+                            <img src="images/final-images/image-26.jpg" alt="done?" class="img-responsive"/>
 
                                  <figcaption>
 
                                     <h2><span></span></h2>
-                                    <p style="color: white"></p>
+                                    <p style="color: white">here, my arm is basically done. Later this breaks and I have to reassemble, but it's pieced together the same way and is the one you see in the demo. So, you can count this as the final version.</p>
                                     <h2><span/></h2>
 
                                 </figcaption>
 
-                            
+                            </figure>
 
                         </section>
 
                         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
 
-                            
+                            <figure class="effect-oscar">
 
-                            <img src="images/final-images/image-15.jpg" alt="" class="img-responsive"/>
+                            <img src="images/final-images/image-27.jpg" alt="success 1" class="img-responsive"/>
 
                                  <figcaption>
 
                                     <h2><span></span></h2>
-                                    <p style="color: white"></p>
+                                    <p style="color: white">again, the bluetooth breaks (keep this in mind for the next four photos), and so I rebuild it. But, again, these all are pieced together the same way so it's basically the same thing as the final product in the demo. Here, i'm testing it. </p>
                                     <h2><span/></h2>
 
                                 </figcaption>
 
-                            
+                            </figure>
 
                         </section>
 
                         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
 
-                            
+                            <figure class="effect-oscar">
 
-                            <img src="images/final-images/image-16.jpg" alt="" class="img-responsive"/>
+                            <img src="images/final-images/image-28.jpg" alt="success 2" class="img-responsive"/>
 
                                  <figcaption>
 
                                     <h2><span></span></h2>
-                                    <p style="color: white"></p>
+                                    <p style="color: white">Again, more tests. Notice the wrist isn't fully calibrated, and I had to fix that.</p>
                                     <h2><span/></h2>
 
                                 </figcaption>
 
-                            
+                            </figure>
 
                         </section>
 
                         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
 
-                            
+                            <figure class="effect-oscar">
 
-                            <img src="images/final-images/image-17.jpg" alt="" class="img-responsive"/>
+                            <img src="images/final-images/image-29.jpg" alt="success 3" class="img-responsive"/>
 
                                  <figcaption>
 
                                     <h2><span></span></h2>
-                                    <p style="color: white"></p>
+                                    <p style="color: white">More testing. Working well so far.</p>
                                     <h2><span/></h2>
 
                                 </figcaption>
 
-                            
+                            </figure>
 
                         </section>
 
                         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
 
-                            
+                            <figure class="effect-oscar">
 
-                            <img src="images/final-images/image-18.jpg" alt="" class="img-responsive"/>
-
-                                 <figcaption>
-
-                                    <h2><span></span></h2>
-                                    <p style="color: white"></p>
-                                    <h2><span/></h2>
-
-                                </figcaption>
-
-                            
-
-                        </section>
-
-                        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
-
-                            
-
-                            <img src="images/final-images/image-19.jpg" alt="" class="img-responsive"/>
+                            <img src="images/final-images/image-30.jpg" alt="success 4" class="img-responsive"/>
 
                                  <figcaption>
 
                                     <h2><span></span></h2>
-                                    <p style="color: white"></p>
+                                    <p style="color: white">More testing!</p>
                                     <h2><span/></h2>
 
                                 </figcaption>
 
-                            
-
-                        </section>
-
-                        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
-
-                            
-
-                            <img src="images/final-images/image-20.jpg" alt="" class="img-responsive"/>
-
-                                 <figcaption>
-
-                                    <h2><span></span></h2>
-                                    <p style="color: white"></p>
-                                    <h2><span/></h2>
-
-                                </figcaption>
-
-                            
-
-                        </section>
-
-                        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
-
-                            
-
-                            <img src="images/final-images/image-21.jpg" alt="" class="img-responsive"/>
-
-                                 <figcaption>
-
-                                    <h2><span></span></h2>
-                                    <p style="color: white"></p>
-                                    <h2><span/></h2>
-
-                                </figcaption>
-
-                            
-
-                        </section>
-
-                        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
-
-                            
-
-                            <img src="images/final-images/image-22.jpg" alt="" class="img-responsive"/>
-
-                                 <figcaption>
-
-                                    <h2><span></span></h2>
-                                    <p style="color: white"></p>
-                                    <h2><span/></h2>
-
-                                </figcaption>
-
-                            
-
-                        </section>
-
-                        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
-
-                            
-
-                            <img src="images/final-images/image-23.jpg" alt="" class="img-responsive"/>
-
-                                 <figcaption>
-
-                                    <h2><span></span></h2>
-                                    <p style="color: white"></p>
-                                    <h2><span/></h2>
-
-                                </figcaption>
-
-                            
-
-                        </section>
-
-                        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
-
-                            
-
-                            <img src="images/final-images/image-24.jpg" alt="" class="img-responsive"/>
-
-                                 <figcaption>
-
-                                    <h2><span></span></h2>
-                                    <p style="color: white"></p>
-                                    <h2><span/></h2>
-
-                                </figcaption>
-
-                            
-
-                        </section>
-
-                        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
-
-                            
-
-                            <img src="images/final-images/image-25.jpg" alt="" class="img-responsive"/>
-
-                                 <figcaption>
-
-                                    <h2><span></span></h2>
-                                    <p style="color: white"></p>
-                                    <h2><span/></h2>
-
-                                </figcaption>
-
-                            
-
-                        </section>
-
-                        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
-
-                            
-
-                            <img src="images/final-images/image-26.jpg" alt="" class="img-responsive"/>
-
-                                 <figcaption>
-
-                                    <h2><span></span></h2>
-                                    <p style="color: white"></p>
-                                    <h2><span/></h2>
-
-                                </figcaption>
-
-                            
-
-                        </section>
-
-                        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
-
-                            
-
-                            <img src="images/final-images/image-27.jpg" alt="" class="img-responsive"/>
-
-                                 <figcaption>
-
-                                    <h2><span></span></h2>
-                                    <p style="color: white"></p>
-                                    <h2><span/></h2>
-
-                                </figcaption>
-
-                            
-
-                        </section>
-
-                        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
-
-                            
-
-                            <img src="images/final-images/image-28.jpg" alt="" class="img-responsive"/>
-
-                                 <figcaption>
-
-                                    <h2><span></span></h2>
-                                    <p style="color: white"></p>
-                                    <h2><span/></h2>
-
-                                </figcaption>
-
-                            
-
-                        </section>
-
-                        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
-
-                            
-
-                            <img src="images/final-images/image-29.jpg" alt="" class="img-responsive"/>
-
-                                 <figcaption>
-
-                                    <h2><span></span></h2>
-                                    <p style="color: white"></p>
-                                    <h2><span/></h2>
-
-                                </figcaption>
-
-                            
-
-                        </section>
-
-                        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
-
-                            
-
-                            <img src="images/final-images/image-30.jpg" alt="" class="img-responsive"/>
-
-                                 <figcaption>
-
-                                    <h2><span></span></h2>
-                                    <p style="color: white"></p>
-                                    <h2><span/></h2>
-
-                                </figcaption>
-
-                            
+                            </figure>
 
                         </section>
 
                     </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="row">
+
+                        <div class="col-xs-12 col-sm-12 col-md-4">
+
+                            <h3>What Now?</h3>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-8">
+
+                            <section>
+
+                                <p><strong>Problems that need to be solved</strong>: Some of the issues with this current design is that all of my limbs need to be isolated and can only move one part of my hand at a time for a reaction to be formed. This is pretty awkward, and takes a lot of time. Another issue with this design is that when the base rotates the wires and breadboard gets dragged with the servo motor, which destroys the wiring (I simply took all of the base movement out of the code). Perhaps the largest problem, however, is the lack of balance on the arm. Adding counterweights actually made it worse, and so I left it as is, but it means it cannot get the full range of motion that I would have liked. Finally, the gripper keeps getting loose and I have to retighten it after every use. <br>
+                                <strong>Future projects</strong>: With these problems in mind, one future project is to make a new arm with my newfound knowledge of this, and create my own CAD that will solve all of these issues currently present. But perhaps the most tantalizing for me is using soft robotics to create a hand controlled by a bluetooth glove. I mentioned this before in the beginning of this page as well. I'm very excited to see where I can go with this now! :)
+                                </p>
+
+                            </section>
+
+                        </div>
+
+                    </div>
+
+                    <div class="clearfix"></div>
+
 
                 <!-- work details -->
 
